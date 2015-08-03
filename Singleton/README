@@ -1,0 +1,6 @@
+1. Error will occur when std::weak_ptr<Singleton> Singleton::__instance is not defined in Singleton.cpp
+    main.o: In function `Singleton::getInstance()':
+    main.cpp:(.text._ZN9Singleton11getInstanceEv[_ZN9Singleton11getInstanceEv]+0x14): undefined reference to `Singleton::__instance'
+    main.cpp:(.text._ZN9Singleton11getInstanceEv[_ZN9Singleton11getInstanceEv]+0x5f): undefined reference to `Singleton::__instance'
+    collect2: error: ld returned 1 exit status
+
